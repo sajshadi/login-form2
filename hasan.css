@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'YekanBakhHeavy';
+}
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(243, 243, 236);
+    height: 600px;
+    border-radius: 50px;
+    box-shadow: 3px 3px 10px darkgray ,
+    -3px -3px 10px #ffffff;
+    width: 70%;
+    padding: 30px 0px;
+}
+form h1 {
+    margin: 0%;
+    padding: 0%;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 4px 4px 4px gray , -2px -2px 2px white;
+}
+.inputs-radio {
+    display: flex;
+    color: rgb(23, 1, 59);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.inputs-radio p {
+    margin: 20px;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.inputs-radio label {
+    margin: 3px;
+    padding: 5px;
+    font-size: 1.25rem; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inputs div input {
+    outline: none;
+    margin-left: 20px;
+    width: 250px;
+    height: 40px;
+    border: none;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    background: none;
+    font-size: large;
+    box-shadow: 2px 2px 5px cadetblue ,
+    -2px -2px 3px #ffffff;
+    transition: all 0.2s ;
+}
+.inputs div input:hover {
+    box-shadow: 2px 2px 10px cadetblue ,
+    -2px -2px 15px #ffffff;
+}
+.inputs-2 label {
+    padding-right: 3px; 
+    font-size: large;
+    font-weight: 700;
+}
+.button-form {
+    margin: 0 auto;
+}
+.button-form button {
+    width: 350px;
+    margin-left: auto;
+    margin-top: 20px;
+    font-size: 1rem;
+    height: 80px;
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 30px;
+    background-color: rgba(148, 238, 241, 0.7);
+    transition: all 0.5s;
+    box-shadow: 5px 5px 5px grey,
+    -3px -3px 10px #ffffff ;
+}
+.button-form button:hover {
+    background-color: rgba(44, 196, 125, 0.7);
+    box-shadow: 5px 5px 20px grey,
+    -3px -3px 30px #ffffff ;
+    animation: button 1s 1;
+}
+.img-form div{
+    background: url(../photo/wp7420855-html-css-wallpapers.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -150px 0px  ;
+    width: 300px ;
+    height: 300px;
+    margin-top: 10px;
+    width: 350px;
+    height: 400px;
+    margin-right: 10px ;
+    border-radius: 40px;
+    box-shadow: 5px 5px 10px darkgray,
+    -5px -5px 5px #ffffff;
+}
+@media (max-width:1100px ){
+    form {
+        width: 90%;
+    }
+}
+@media (max-width: 998px ){
+    .inputs-2 div label {
+        padding: 10px;
+    }
+    .inputs div input {
+        margin-left: 10px;
+    }
+    .img-form img {
+        margin: 10px auto;
+    } 
+    form {
+        width: 95%;
+        height: 600px;
+        padding: 20px 0 ;
+    }
+}
+@media (max-width: 780px ) {
+    form {
+        flex-direction: column;
+        height: 800px;
+    }
+    .img-form img {
+        width: 150px;
+        height: 120px;
+        box-sizing: border-box;
+    }
+    .button-form button {
+        display: none;
+    }
+    .img-form {
+        text-align: center;
+    }
+    .inputs div input {
+        width: 300px;
+        height: 50px;
+    }
+}
+
+@media  (min-width: 780px) {
+    .button-form-2 {
+        display: none;
+        margin:  50px;
+    }
+}
+@media (max-width: 780px) {
+    form {
+        height: 850px;
+        margin: 20px;
+    }
+    .button-res-750{
+        background-color: rgb(156, 245, 245);
+        margin-bottom: 20px;
+        width:  400px;
+        height: 50px;
+        border: none;
+        border-radius: 30px;
+        box-shadow: 2px 2px 5px cadetblue;
+        font-size: large;
+        transition: all 0.5s;
+    }
+    .button-res-750:hover {
+        background-color: rgb(160, 240, 222);
+    }
+    .button-form-2 {
+        text-align: center;
+    }
+}
+@media (max-width: 578px ) {
+    form {
+        height: 850px;
+        padding: 10px 0;
+    }
+    .inputs-2 div {
+        /* display: flex; */
+        /* flex-direction: column; */
+        align-items: center;
+    }
+    .inputs-2 label {
+        margin: 0px;
+        padding: 0%;
+    }
+    .inputs-2 div input {
+        width: 250px;
+    }
+    .inputs-2 .user-name {
+        width: 250px;
+    }
+    .button-res-750 {
+        margin-top: 20px;
+    }
+    .inputs-2 div {
+        margin: 0;
+    }
+    .img-form img {
+        margin-top: 30px;
+    }
+}
+@media (max-width: 450px ) {
+    form {
+        height: 1000px;
+    }
+    .button-res-750 {
+        width: 250px;
+        margin-bottom: 40px;
+    }   
+    .inputs-2 div label {
+        padding: 0%;
+    }
+    .inputs-2 div {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .inputs-2 .user-name {
+        flex-direction: column-reverse;
+    }
+    .form-img .inputs-radio {
+        margin-bottom: 20px;
+    }
+}
+@keyframes button {
+    25% {
+        transform: translate(-15px);
+        transform: rotate(1deg);
+    }
+    40% {
+        transform: rotate(-1deg);
+    }
+    50% {
+        transform: translate(15px);
+        transform: rotate(1deg);
+    }
+    70% {
+        border-radius: 50px;
+        transform: rotate(-1deg);
+        width: 360px;
+    }
+    100% {
+        transform: rotate(0deg)
+    }
+}
